@@ -1,111 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact me</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<style>
-    header{
-        background-color: #980000;
-        color: black;
-        text-align: right;
-    }
-    body{
-        background-image: url("d1.webp");
-        background-size:cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        
-    }
-    table{
-        border-collapse: collapse;
-        width: 100%;
+  <!-- Title (unique per page) -->
+  <title>Contact Me | Sejal Singh</title>
 
-    } 
-    th{
-        border:2px solid black;
-        padding: 5px;
-    }
-    .ha th:nth-child(1){
-        width: 30%;
-    }
-    .ha th:nth-child(2){
-        width: 70%;
-        color: rgb(255, 247, 157);
-    }
-    .ha th{
-        border: none;
-    }
-    .he{
-        background-color: blanchedalmond;
-    }
-    form{
-        text-align: center;
-        font-size: larger;
-        border: 4px;
-    }
-    p{
-        margin-left:10px;
-    }
-</style>
+  <!-- SEO Meta -->
+  <meta name="description" content="Portfolio website of Sejal Singh — BCA Student and Frontend Developer skilled in C, C++, HTML, CSS, and JavaScript." />
+  <meta name="keywords" content="Sejal Singh, Portfolio, Frontend Developer, BCA, HTML, CSS, JavaScript, Varanasi" />
+  <meta name="author" content="Sejal Singh" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Open Graph Meta (for LinkedIn / social preview) -->
+  <meta property="og:title" content="Sejal Singh | Portfolio" />
+  <meta property="og:description" content="Explore the portfolio of Sejal Singh — a BCA student and aspiring Frontend Developer." />
+  <meta property="og:image" content="preview.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://myportfolio8015.netlify.app" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <header>
-        <table class="ha">
-<th><img src="Pfp.jpg" alt="My picture" style="width:200px;height:200px;"> </th>
-<th align="center"><h1>My Portfolio </h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~Sejal Singh</th>
-</table>
-</header>
-<br>
 
-<table style="width: 100%;" class="he">
-    <tr>
-        <th><a href="index.html" target="_blank">HOME</a></th>
-        <th><a href="aboutme.html" target="_blank">ABOUT ME</a></th>
-        <th><a href="qualification.html" target="_blank">QUALIFICATIONS</a></th>
-        <th><a href="contactme.html" target="_blank">CONTACT ME</a></th>
-        
-    </tr>
-</table>
-<hr style="border: 2px solid cornflowerblue;">
-<hr style="border: 2px solid rgb(254, 196, 4); width: 80%; margin-left: 0;">
- <form action="/action_page.php">
-    <label for="fn">First Name:</label>
-    <br>
-    <input type="text" id="fn" name="fn" value="">
-    <br><br>
+  <header class="navbar">
+    <div class="logo">
+      <img src="Pfp.jpg" alt="Sejal Singh" />
+      <div>
+        <h1>Sejal Singh</h1>
+        <p>BCA Student | Frontend Developer</p>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About</a>
+      <a href="qualification.html">Qualifications</a>
+      <a href="contactme.html" class="active">Contact</a>
+    </nav>
+  </header>
 
-    <label for="ln">Last Name:</label>
-    <br>
-    <input type="text" id="ln" name="ln" value="">
-    <br><br>
+  <main class="contact-section">
+    <div class="contact-container">
+      <h2>Get in Touch</h2>
+      <p class="contact-intro">
+        I’d love to connect with you! Whether it’s an internship opportunity, collaboration, 
+        or simply to say hi — feel free to reach out through any of the platforms below.
+      </p>
 
-    <label for="pn">Phone Number:</label>
-    <br>
-    <input type="number" id="pn" name="pn" value="">
-    <br><br>
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <div>
+          <h3>Email</h3>
+          <a href="mailto:sejalsingh8121@gmail.com">sejalsingh8121@gmail.com</a>
+        </div>
+        <div>
+          <h3>LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/sejal-singh-2b5534331" target="_blank">
+            linkedin.com/in/sejal-singh-2b5534331
+          </a>
+        </div>
+        <div>
+          <h3>GitHub</h3>
+          <a href="https://github.com/SejalSingh8121" target="_blank">
+            github.com/SejalSingh8121
+          </a>
+        </div>
+        <div>
+          <h3>Address</h3>
+          <p>Varanasi, Uttar Pradesh, 221011</p>
+        </div>
+      </div>
 
-    <label for="el">Email:</label>
-    <br>
-    <input type="email" id="el" name="el" value="">
-    <br><br>
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3>Send a Message</h3>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
 
-    <label for="ms">Message:</label>
-    <br>
-    <input type="text" id="ms" name="ms" value="">
-    <br><br>
+    </div>
+  </main>
 
-    <input type="reset" id="re" name="re" value="Reset">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <footer>
+    <p>© 2025 Sejal Singh | All Rights Reserved</p>
+  </footer>
 
-    <input type="submit" id="sm" name="sm" value="Submit">
-    <br>
- </form>
-  <footer style="position: fixed; bottom: 0; left: 0; width:100%; background: #980000; color: rgb(255, 247, 157);; text-align: right; padding-right: 1px; ">
-    <hr style="border: 2px solid rgb(255, 247, 157);">
-    4/4 &nbsp;&nbsp;
-</footer>
 </body>
 </html>

@@ -1,93 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Title (unique per page) -->
+  <title>About Me | Sejal Singh</title>
 
-<style>
-    header{
-        background-color: #980000;
-        color: black;
-        text-align: right;
-    }
-    body{
-        background-image: url("d1.webp");
-        background-size:cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        
-    }
-    table{
-        border-collapse: collapse;
-        width: 100%;
+  <!-- SEO Meta -->
+  <meta name="description" content="Portfolio website of Sejal Singh — BCA Student and Frontend Developer skilled in C, C++, HTML, CSS, and JavaScript." />
+  <meta name="keywords" content="Sejal Singh, Portfolio, Frontend Developer, BCA, HTML, CSS, JavaScript, Varanasi" />
+  <meta name="author" content="Sejal Singh" />
 
-    } 
-    th{
-        border:2px solid black;
-        padding: 5px;
-    }
-    .ha th:nth-child(1){
-        width: 30%;
-    }
-    .ha th:nth-child(2){
-        width: 70%;
-        color: rgb(255, 247, 157);
-    }
-    .ha th{
-        border: none;
-    }
-    .he{
-        background-color: blanchedalmond;
-    }
-    p{
-        margin-left:10px;
-    }
-</style>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Open Graph Meta (for LinkedIn / social preview) -->
+  <meta property="og:title" content="Sejal Singh | Portfolio" />
+  <meta property="og:description" content="Explore the portfolio of Sejal Singh — a BCA student and aspiring Frontend Developer." />
+  <meta property="og:image" content="preview.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://myportfolio8015.netlify.app" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <header>
-        <table class="ha">
-<th><img src="Pfp.jpg" alt="My picture" style="width:200px;height:200px;"> </th>
-<th align="center"><h1>My Portfolio </h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~Sejal Singh</th>
-</table>
-</header>
-<br>
 
-<table style="width: 100%;" class="he">
-    <tr>
-        <th><a href="index.html" target="_blank">HOME</a></th>
-        <th><a href="aboutme.html" target="_blank">ABOUT ME</a></th>
-        <th><a href="qualification.html" target="_blank">QUALIFICATIONS</a></th>
-        <th><a href="contactme.html" target="_blank">CONTACT ME</a></th>
-        
-    </tr>
-</table>
-<hr style="border: 2px solid cornflowerblue;">
-<hr style="border: 2px solid rgb(254, 196, 4); width: 80%; margin-left: 0;">
-<p style="font-size:larger;">
-    <b>Name:</b> Sejal singh
-    <br>
-    <b>DOB:</b> 13/10/2025
-    <br>
-    <b>Gender:</b> Female
-    <br>
-    <b>Occupation:</b> NULL
-    <br>
-    <b>Current status:</b> student at DMPG studying BCA 3rd sem
-    <br>
-    <b>Phone number:</b> ********81
-    <br>
-    <b>Email:</b> sejalsingh8121@gmail.com
-    <br>
-    <b>linkden Profile:</b> <a href="www.linkedin.com/in/sejal-singh-2b5534331" target="_blank">www.linkedin.com/in/sejal-singh-2b5534331</a>
-    <br>
-</p> 
- <footer style="position: fixed; bottom: 0; left: 0; width:100%; background: #980000; color: rgb(255, 247, 157);; text-align: right; padding-right: 1px; ">
-    <hr style="border: 2px solid rgb(255, 247, 157);">
-    2/4 &nbsp;&nbsp;
-</footer>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="Pfp.jpg" alt="Sejal Singh" />
+      <div>
+        <h1>Sejal Singh</h1>
+        <p>BCA Student | Frontend Developer</p>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="aboutme.html" class="active">About</a>
+      <a href="qualification.html">Qualifications</a>
+      <a href="contactme.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="about-section">
+    <div class="about-container">
+      <h2>About Me</h2>
+      <p class="intro-text">
+        I'm <strong>Sejal Singh</strong>, currently pursuing a <b>Bachelor of Computer Applications (BCA)</b> from 
+        Dhirendra Mahila P.G. College, Varanasi. I’m passionate about technology, coding, and web development. 
+        I love creating clean, interactive, and responsive designs that focus on user experience.
+      </p>
+
+      <div class="info-grid">
+        <div>
+          <p><strong>Date of Birth:</strong> 13 October 2005</p>
+          <p><strong>Gender:</strong> Female</p>
+          <p><strong>Location:</strong> Varanasi, Uttar Pradesh, India</p>
+        </div>
+        <div>
+          <p><strong>Current Status:</strong> BCA 2nd Year Student</p>
+          <p><strong>Email:</strong> <a href="mailto:sejalsingh8121@gmail.com">sejalsingh8121@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> 
+            <a href="https://www.linkedin.com/in/sejal-singh-2b5534331" target="_blank">linkedin.com/in/sejal-singh-2b5534331</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="about-extra">
+        <h3>Interests & Strengths</h3>
+        <p>
+          Apart from coding, I enjoy exploring AI-assisted tools, improving my design sense, 
+          and learning new frameworks. My key strengths include effective communication, teamwork, 
+          and adaptability — qualities that help me thrive in dynamic environments.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Sejal Singh | All Rights Reserved</p>
+  </footer>
+
 </body>
 </html>

@@ -1,89 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<style>
-    header{
-        background-color: #980000;
-        color: black;
-        text-align: right;
-    }
-    body{
-        background-image: url("d1.webp");
-        background-size:cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        
-    }
-    table{
-        border-collapse: collapse;
-        width: 100%;
+  <!-- Title (unique per page) -->
+  <title>Sejal Singh | Portfolio</title>
 
-    } 
-    th{
-        border:2px solid black;
-        padding: 5px;
-    }
-    .ha th:nth-child(1){
-        width: 30%;
-    }
-    .ha th:nth-child(2){
-        width: 70%;
-        color: rgb(255, 247, 157);
-    }
-    .ha th{
-        border: none;
-    }
-    .he th{
-        background-color: blanchedalmond; 
-       
-    }
-    p{
-        margin-left:10px;
-        font-size: larger;
-    }
-</style>
+  <!-- SEO Meta -->
+  <meta name="description" content="Portfolio website of Sejal Singh — BCA Student and Frontend Developer skilled in C, C++, HTML, CSS, and JavaScript." />
+  <meta name="keywords" content="Sejal Singh, Portfolio, Frontend Developer, BCA, HTML, CSS, JavaScript, Varanasi" />
+  <meta name="author" content="Sejal Singh" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Open Graph Meta (for LinkedIn / social preview) -->
+  <meta property="og:title" content="Sejal Singh | Portfolio" />
+  <meta property="og:description" content="Explore the portfolio of Sejal Singh — a BCA student and aspiring Frontend Developer." />
+  <meta property="og:image" content="preview.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://myportfolio8015.netlify.app" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-    <header>
-        <table class="ha">
-<th><img src="Pfp.jpg" alt="My picture" style="width:200px;height:200px;"> </th>
-<th align="center"><h1>My Portfolio </h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~Sejal Singh</th>
-</table>
-</header>
-<br>
+  <header class="navbar">
+    <div class="logo">
+      <img src="Pfp.jpg" alt="Sejal Singh" />
+      <h1>Sejal Singh</h1>
+      <p>BCA Student | Frontend Developer</p>
+    </div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="aboutme.html">About</a>
+      <a href="qualification.html">Qualifications</a>
+      <a href="contactme.html">Contact</a>
+    </nav>
+  </header>
 
-<table style="width: 100%;" class="he">
-    <tr>
-        <th><a href="index.html" target="_blank">HOME</a></th>
-        <th><a href="aboutme.html" target="_blank">ABOUT ME</a></th>
-        <th><a href="qualification.html" target="_blank">QUALIFICATIONS</a></th>
-        <th><a href="contactme.html" target="_blank">CONTACT ME</a></th>
-        
-    </tr>
-</table>
-<hr style="border: 2px solid cornflowerblue;">
-<hr style="border: 2px solid rgb(254, 196, 4); width: 80%; margin-left: 0;">
-<p style="font-size:larger;">Hi,<br> I am Sejal singh and this is a sample porfolio by me as my first HTML project.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, laudantium accusamus. Deserunt sit dolores expedita soluta sed voluptas, 
-    molestias magnam, repudiandae iusto ab eum hic eos fuga amet molestiae nam et totam ipsa quo blanditiis enim obcaecati non nesciunt. Mollitia 
-    aspernatur reiciendis dolor odit nemo perspiciatis doloribus minus a velit, suscipit adipisci sed, nobis quod et assumenda nesciunt repellat, 
-    dolorum aut aliquid iste. Quia quos molestiae quod debitis maxime aperiam reprehenderit dignissimos explicabo vel! Ad labore aliquid porro 
-    eligendi odit voluptates quos dicta, nobis repellat sint vel? Provident corporis exercitationem laborum est perspiciatis similique quae, ipsum 
-    nemo asperiores accusamus eveniet id tempore error! Cupiditate totam quidem porro error ea corporis ullam aspernatur, saepe nobis eum dolore 
-    odio dolor qui excepturi praesentium labore rem recusandae ratione asperiores voluptatum. Cupiditate nulla, unde ipsam at voluptate voluptatem 
-    omnis placeat quibusdam ex nemo animi necessitatibus repudiandae excepturi ut officiis perferendis iure voluptates sequi! Beatae, quis! 
-    Architecto sint deserunt a quos illo dicta doloremque, distinctio odio atque unde vel. Est ex, id architecto impedit laborum quisquam minima 
-    blanditiis nisi voluptatibus beatae hic odit culpa natus dignissimos! Nihil amet modi error commodi cum deleniti sapiente earum harum. 
-</p>
- <footer style="position: fixed; bottom: 0; left: 0; width:100%; background: #980000; color: rgb(255, 247, 157);; text-align: right; padding-right: 1px; ">
-    <hr style="border: 2px solid rgb(255, 247, 157);">
-    1/4 &nbsp;&nbsp;
-</footer>
+  <main class="home-section">
+    <div class="intro">
+      <h2>Welcome to My Portfolio</h2>
+      <p>
+        Hi! I’m <strong>Sejal Singh</strong>, a passionate BCA student with hands-on experience 
+        in <b>C, C++, and Frontend Web Development</b>. I enjoy building user-friendly websites 
+        and exploring new technologies. I’m currently open to internship opportunities to grow 
+        and contribute to impactful projects.
+      </p>
+      <a href="aboutme.html" class="btn">Know More</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Sejal Singh | All Rights Reserved</p>
+  </footer>
+
 </body>
 </html>
